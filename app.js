@@ -4,6 +4,13 @@ var name = "Pratham";
 var name = "Priyanshu"
 name = "Chetan"; // Assignment
 
+
+let num = 12830;
+
+
+let num1 = BigInt(229640520397);
+console.log(typeof(num1))
+
 // console.log(name)
 // let (Keyword)
 
@@ -50,6 +57,140 @@ let statement = null
 // let group = ["Chetan", "Pratham", "Priyanshu", "Aadarsh"]
 // console.log(group[3])
 // b. object
+
+
+// document.write(products[0].name)
+// document.write(products[1].name)
+// document.write(products[2].name)
+// document.write(products[3].name)
+// document.write(products[4].name)
+// document.write(products[5].name)
+// document.write(products[6].name)
+// document.write(products[7].name)
+// document.write(products[8].name)
+// document.write(products[9].name)
+// document.write(products[10].name)
+
+// for(let worker = 0; worker < products.length; worker++){
+//     document.write(products[worker].name, "<br>")
+// }
+
+// alert("Hello TCM")
+
+// console.log("TCM Students")
+
+// document.write("Helllo")
+
+// let name= prompt("Enter Your Name")
+
+// let status = confirm("Are you want to delete this data ?")
+// ___________________________________________________
+
+//Loop
+
+// let array = ["Apple", "Banana", "Grapes", "Orange"]
+
+// for loop
+// for(let i = 0; i < array.length; i++){
+//     console.log(i, typeof(i))
+// }
+
+// for in loop
+// for(let i in array){
+//     console.log(i, typeof(i))
+// }
+
+// for of
+// for(let i of array){
+//     console.log(i)
+// }
+// For each loop
+// array.forEach(i => console.log(i))
+
+// In the while if we have a one false condtion in our execution then while loop will never show output
+// let x = 10;
+// while(x <= 5){
+//     console.log(x)
+//     x++;
+// }
+
+
+// In the while if we have a one false condtion in our execution then while loop will perform a one time only
+// let i = 15;
+
+// do{
+//     console.log(i)
+//     i++;
+// }
+// while(i <= 10)
+
+// let num = 51;
+
+// if(num === 51){
+//     console.log("Yes it is Equal")
+// }else{
+//     console.log("No it is not Equal")
+// }
+
+// let names = "Chetan";
+
+// if(names == "Ayushman"){
+//     console.log("Yes it is ayushman")
+// }else if(names == "Pratham"){
+//     console.log("Yes it is Pratham")
+// }else if(names == "Priyanshu"){
+//     console.log("Yes it is Priyanshu")
+// }
+// else{
+//     console.log("There is no user found...:(")
+// }
+
+// DOM - document object modal
+
+
+// Access HTML elements 
+// ____________________________
+// console.log(document.getElementsByTagName('h1')[1])
+// console.log(document.getElementsByClassName("head")[3])
+// console.log(document.getElementById('head'))
+// console.log(document.querySelector('h1'))
+// console.log(document.querySelectorAll('h1')[3])
+
+// Append HTML Data or element 
+// InnerText (text add)
+// InnerHTML (HTML add)
+// document.getElementsByTagName('h2')[0].innerHTML = "<span>Ayushman</span>";
+// document.getElementsByTagName('h2')[0].style.color = "red";
+// document.getElementsByTagName('h2')[0].style.backgroundColor = "lightpink";
+// document.getElementsByTagName('h2')[0].style.fontSize = " 34px";
+
+
+let body = document.querySelector('body');
+
+// let head = document.createElement('h1');
+// body.appendChild(head);
+
+// head.innerText = "Hii I am come from JS Code";
+// head.setAttribute("class", "fs-5")
+// head.classList.add("text-primary")
+
+// let img = document.createElement('img');
+// body.appendChild(img)
+// img.setAttribute('src', 'https://img.magnific.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?semt=ais_hybrid&w=740&q=80');
+// img.setAttribute('width', "300")
+
+// products
+//  id: 14,
+//         name: "Mobile Charger",
+//         category: "Electronics",
+//         price: 899,
+//         stock: 45,
+//         brand: "Samsung",
+//         rating: 4.2,
+//         discount: 12,
+//         image: "charger.jpg"
+
+
 
 const products = [
     {
@@ -287,88 +428,62 @@ const products = [
     }
 ];
 
-// document.write(products[0].name)
-// document.write(products[1].name)
-// document.write(products[2].name)
-// document.write(products[3].name)
-// document.write(products[4].name)
-// document.write(products[5].name)
-// document.write(products[6].name)
-// document.write(products[7].name)
-// document.write(products[8].name)
-// document.write(products[9].name)
-// document.write(products[10].name)
 
-// for(let worker = 0; worker < products.length; worker++){
-//     document.write(products[worker].name, "<br>")
-// }
+let section = document.getElementById('section');
+let container = document.createElement('div');
+let row = document.createElement('div');
 
-// alert("Hello TCM")
+body.appendChild(section)
+section.appendChild(container)
+container.appendChild(row)
 
-// console.log("TCM Students")
+container.classList.add('container')
+row.classList.add('row')
+row.setAttribute('id', 'data')
 
-// document.write("Helllo")
+let data = document.getElementById('data');
 
-// let name= prompt("Enter Your Name")
-
-// let status = confirm("Are you want to delete this data ?")
-// ___________________________________________________
-
-//Loop
-
-// let array = ["Apple", "Banana", "Grapes", "Orange"]
-
-// for loop
-// for(let i = 0; i < array.length; i++){
-//     console.log(i, typeof(i))
-// }
-
-// for in loop
-// for(let i in array){
-//     console.log(i, typeof(i))
-// }
-
-// for of
-// for(let i of array){
-//     console.log(i)
-// }
-// For each loop
-// array.forEach(i => console.log(i))
-
-// In the while if we have a one false condtion in our execution then while loop will never show output
-// let x = 10;
-// while(x <= 5){
-//     console.log(x)
-//     x++;
-// }
-
-
-// In the while if we have a one false condtion in our execution then while loop will perform a one time only
-// let i = 15;
-
-// do{
-//     console.log(i)
-//     i++;
-// }
-// while(i <= 10)
-
-// let num = 51;
-
-// if(num === 51){
-//     console.log("Yes it is Equal")
-// }else{
-//     console.log("No it is not Equal")
-// }
-
-let names = "Chetan";
-
-if(names == "Ayushman"){
-    console.log("Yes it is ayushman")
-}else if(names == "Pratham"){
-    console.log("Yes it is Pratham")
-}else if(names == "Priyanshu"){
-    console.log("Yes it is Priyanshu")
+for(let i = 0; i < products.length; i++){
+   
+    data.innerHTML += `
+        <div class='col-md-3'>
+            <div class='card h-100 my-2 p-2 border-0 shadow ${products[i].stock <= 15 ? 'bg-danger-subtle text-danger': 'bg-success-subtle text-success'}'>
+                <div class='card-body'>
+                    <span class='badge ${products[i].stock <= 15 ? 'bg-danger text-light': 'bg-success text-light'}'>${products[i].stock}</span>
+                    <span class='badge ${products[i].stock <= 15 ? 'bg-danger text-light': 'bg-success text-light'}'> ${products[i].stock <= 15 ? "Out Of Stock": "In Stock"}</span>
+                    <h3>${products[i].name}</h3>
+                    <p>${products[i].price}</p>
+                </div>
+            </div>
+        </div>
+    `;
 }
-else{
-    console.log("There is no user found...:(")
-}
+
+// let sname = document.getElementById('name');
+
+
+// function getValue(){
+
+//     debugger;
+
+// switch (sname.value) {
+//     case '2026-08-12':
+//         console.log("Today is 15th August")
+//         break;
+
+//     case '2026-08-13':
+//         console.log("Today is 15th August")
+//         break;
+
+//     case '2026-08-15':
+//         console.log("Today is 15th August")
+//         break;
+        
+//     default:
+//         console.log("Not Found")
+//         break;
+//     }
+// }
+
+
+
