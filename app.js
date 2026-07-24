@@ -9,7 +9,6 @@ let num = 12830;
 
 
 let num1 = BigInt(229640520397);
-console.log(typeof(num1))
 
 // console.log(name)
 // let (Keyword)
@@ -485,5 +484,94 @@ for(let i = 0; i < products.length; i++){
 //     }
 // }
 
+// assignment Operator
+// name value is Ansh
+// let aname = "Ansh";
+// let x = 5;
+
+// x += 8
+// x -= 3
+// x *= 3
+// x /= 3
+// x %= 3
+// console.log(x)
 
 
+// Comperiosion Operator
+
+// let x = 5;
+
+// console.log(x == 5) Value Check only
+// console.log(x == "5")
+// console.log(x === "5") // Vale & Data type
+// console.log(x != 5)
+// console.log(x !== "5") 
+// console.log(x > 10)
+// console.log(x < 10)
+// console.log(x > 5)
+// console.log(x <= 5)
+
+
+// Arthimetic Operator
+
+// let x = 5;
+// let y = 40;
+
+// console.log(x + y)
+// console.log(x - y)
+// console.log(x * y)
+// console.log(x / y)
+// console.log(x % y)
+// console.log(x ** y)
+
+// Logical Operetor
+
+// let x = 15;
+
+// -false------true------
+// if(x === 5 && x > 10){
+//     console.log("Yes It is Working")
+// }else{
+//     console.log("No")
+// }
+
+// -false------true------
+// if(x === 5 || x > 10){
+//     console.log("Yes It is Working")
+// }else{
+//     console.log("No")
+// }
+
+// if(x === 5  x > 10){
+//     console.log("Yes It is Working")
+// }else{
+//     console.log("No")
+// }
+
+// let marks = 85;
+// let attendance = 90
+// if(marks >= 40 && attendance >=75){
+//     console.log("Seats Open")
+// }else{
+//     console.log("Seat Not Open")
+// }
+
+// let isAvaiable = true;
+
+// if(isAvaiable == false){
+//     console.log("He is Offline")
+// }else{
+//     console.log("He is Online")
+// }
+
+// if(!isAvaiable){
+//     console.log("He is Offline")
+// }else{
+//     console.log("He is Online")
+// }
+
+// let x = 15;
+// (x > 10) ? console.log("Yes it is grater then 10") : console.log("No it is not")
+
+x = "80"
+console.log(typeof(x))
