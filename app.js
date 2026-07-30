@@ -35,7 +35,7 @@ const student_id = 4565;
 let age = 67;
 
 // 2. string, 
-let fname = "Ayushman";
+// let fname = "Ayushman";
 
 
 // 3. boolean
@@ -573,5 +573,90 @@ for(let i = 0; i < products.length; i++){
 // let x = 15;
 // (x > 10) ? console.log("Yes it is grater then 10") : console.log("No it is not")
 
-x = "80"
-console.log(typeof(x))
+// x = "80"
+// console.log(typeof(x))
+
+// Function
+
+// function priya(){
+//     console.log("Priya")
+// }
+
+// function pratham(){
+//     console.log("Pratham")
+// }
+
+// function aadarsh(){
+//     console.log("Aadarsh")
+// }
+
+// priya()
+// priya()
+// priya()
+// aadarsh()
+// pratham()
+
+// function fullname(fname, lname){
+//     name = fname +" "+lname;
+//     console.log(name)
+// }
+
+// fullname("Ayushman", "Chourasiya");
+// fullname("Pratham", "Soni");
+// fullname("Aadarsh", "Thakre");
+// fullname("Priya", "Soni");
+
+// function parent(){
+//     let money = 67000
+//     function childfun(){
+//         console.log(money)
+//     }
+//     childfun()
+// }
+// parent()
+
+// Clauser Function
+// function parent(){
+//     let num01 = 6;
+
+//     function childfn(){
+//         let numchild01 = 4;
+
+//         function subtotal(){
+//             let total = num01 + numchild01;
+//             console.log(total)
+//         }
+//         subtotal()
+//     }
+//     childfn()
+// }
+// parent()
+
+// let fn = ()=> {console.log("Hello")}
+// fn()
+
+// Vairiable Function
+// let fn = function(){
+//     console.log("Hello")
+// }
+// fn()
+
+// Instant Invoke Function / Anonymous Function
+// (function(){
+//     console.log("Hello")
+// })()
+
+class User{
+    constructor(name, lname){
+        this.name = name;
+        this.lname = lname;
+    }
+}
+
+let u1 = new User("Audi", "Black");
+let u2 = new User("Audi", "Black");
+let u3 = new User("Audi", "Black");
+let u4 = new User("Audi", "Black");
+
+let array = [u1, u2, u3, u4]
+console.log(array)
