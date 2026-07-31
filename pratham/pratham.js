@@ -40,7 +40,5 @@ function getValue() {
     }
 }
 
-
-
 getValue();
 
