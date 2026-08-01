@@ -78,37 +78,123 @@
 // price.innerText = car1.CarPrice;
 
 
-class Car{
-    constructor(showroom, carName, carColor, CarPrice, carImage){
-        this.showroom = "Bilaspur, India"
-        this.carName = carName;
-        this.carColor = carColor;
-        this.CarPrice = CarPrice;
-        this.carImage = carImage;
+// class Car{
+//     constructor(showroom, carName, carColor, CarPrice, carImage){
+//         this.showroom = "Bilaspur, India"
+//         this.carName = carName;
+//         this.carColor = carColor;
+//         this.CarPrice = CarPrice;
+//         this.carImage = carImage;
+//     }
+// }
+
+// let car1 = new Car(this.showroom, "Audi", "Black", 5440000, "https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/Q7/12198/1768206503532/front-left-side-47.jpg");
+
+// let car2 = new Car(this.showroom, "BMW", "Blue", 239999, "https://imgd.aeplcdn.com/642x336/n/udkfdib_1893823.jpg?q=80");
+
+// let car3 = new Car(this.showroom, "Skoda", "Gray", 230000, "https://stimg.cardekho.com/images/car-images/large/Skoda/Octavia-2025/11527/1707974348350/221_Silver_7b7a87.jpg?impolicy=resize&imwidth=420");
+
+// let allCars = [car1, car2, car3];
+
+// let data = document.getElementById('data');
+// // console.log(allCars[0])
+// for(let car of allCars){
+//     data.innerHTML += `
+//         <div class='col-md-4'>
+//             <div class='card h-100 p-2 border-1 rounded-3'>
+//                 <div class='card-body'>
+//                     <img src='${car.carImage}' class='w-100'>
+//                     <span class='badge bg-primary-sublte text-primary'>${car.showroom}</span>
+//                     <h2 class='card-title'>${car.carName}</h2>
+//                     <h4 class='fw-bold text-primary'>${car.CarPrice}</h4>
+//                 </div>
+//             </div>
+//         </div>
+//     `;
+// }
+
+
+let student = [
+    {
+        name: "Ayushman",
+        age:42,
+        city: "Raipur"
+    },
+     {
+        name: "Priyanshu",
+        age:41,
+        city: "Raipur"
+    }, {
+        name: "Pratham",
+        age:43,
+        city: "Katani"
+    }
+]
+
+// let name = 
+
+// function fnName(){
+
+// }
+// Template Class where we are going to create a Instance of object with (new) keyword and its constructor
+// Template Keyword
+// class User{
+//     // Declearation
+//     constructor(name, age, city){
+//         // Initilization
+//         this.name = "Priyanshu";
+//         this.age = 23,
+//         this.city = "Bilaspur";
+//     }
+// }
+
+// let u1 = new User()
+
+// console.log(u1)
+
+// console.log(typeof(u1))
+
+
+class User{
+    constructor(name, age, city){
+        this.name = name;
+        this.age = age;
+        this.city = city;
     }
 }
+let u1 = new User("Priyanshu", 23, "Waraseoni");
+let u2 = new User("Pratham", 24, "Katani");
+let u3 = new User("Priya", 20, "Balaghat");
+let u4 = new User("Aadarsh", 22, "Katangi");
+let u5 = new User("Rajesh", 20, "Seoni");
 
-let car1 = new Car(this.showroom, "Audi", "Black", 5440000, "https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/Q7/12198/1768206503532/front-left-side-47.jpg");
+let allUser = [u1, u2, u3, u4, u5]
 
-let car2 = new Car(this.showroom, "BMW", "Blue", 239999, "https://imgd.aeplcdn.com/642x336/n/udkfdib_1893823.jpg?q=80");
-
-let car3 = new Car(this.showroom, "Skoda", "Gray", 230000, "https://stimg.cardekho.com/images/car-images/large/Skoda/Octavia-2025/11527/1707974348350/221_Silver_7b7a87.jpg?impolicy=resize&imwidth=420");
-
-let allCars = [car1, car2, car3];
-
-let data = document.getElementById('data');
-// console.log(allCars[0])
-for(let car of allCars){
-    data.innerHTML += `
-        <div class='col-md-4'>
-            <div class='card h-100 p-2 border-1 rounded-3'>
-                <div class='card-body'>
-                    <img src='${car.carImage}' class='w-100'>
-                    <span class='badge bg-primary-sublte text-primary'>${car.showroom}</span>
-                    <h2 class='card-title'>${car.carName}</h2>
-                    <h4 class='fw-bold text-primary'>${car.CarPrice}</h4>
-                </div>
-            </div>
-        </div>
-    `;
+for(let user of allUser){
+    console.log("Hii my name is ", user.name)
 }
+
+// console.log(allUser[1])
+
+// let count = 0;
+
+// let countText = document.getElementById("count");
+// let btn = document.getElementById('btn');
+// btn.addEventListener('click', ()=>{
+//     count++;
+//     countText.innerText = count;
+// })
+
+let count = 0;
+let countText = document.getElementById("count");
+let fruits = ["apple", "Banana", "Grapes"];
+
+let btn = document.getElementById('btn');
+btn.addEventListener('click', ()=>{
+    if(count < fruits.length){
+        countText.innerText += fruits[count];
+        count++;
+    }else{
+        alert("No More Fruits...")
+    }
+})
