@@ -187,7 +187,12 @@ for(let user of allUser){
 
 let count = 0;
 let countText = document.getElementById("count");
+let allData = document.getElementById("allData");
 let fruits = ["apple", "Banana", "Grapes"];
+
+for(let f of fruits){
+    allData.innerHTML +=`<li>${f} <button>Add to Cart</button></li>`;
+}
 
 let btn = document.getElementById('btn');
 btn.addEventListener('click', ()=>{
