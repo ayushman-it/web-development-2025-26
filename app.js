@@ -170,9 +170,9 @@ let u5 = new User("Rajesh", 20, "Seoni");
 
 let allUser = [u1, u2, u3, u4, u5]
 
-for(let user of allUser){
-    console.log("Hii my name is ", user.name)
-}
+// for(let user of allUser){
+//     console.log("Hii my name is ", user.name)
+// }
 
 // console.log(allUser[1])
 
@@ -185,21 +185,83 @@ for(let user of allUser){
 //     countText.innerText = count;
 // })
 
-let count = 0;
-let countText = document.getElementById("count");
-let allData = document.getElementById("allData");
-let fruits = ["apple", "Banana", "Grapes"];
+// let count = 0;
+// let countText = document.getElementById("count");
+// let allData = document.getElementById("allData");
+// let fruits = ["apple", "Banana", "Grapes"];
 
-for(let f of fruits){
-    allData.innerHTML +=`<li>${f} <button>Add to Cart</button></li>`;
+// for(let f of fruits){
+//     allData.innerHTML +=`<li>${f} <button>Add to Cart</button></li>`;
+// }
+
+// let btn = document.getElementById('btn');
+// btn.addEventListener('click', ()=>{
+//     if(count < fruits.length){
+//         countText.innerText += fruits[count];
+//         count++;
+//     }else{
+//         alert("No More Fruits...")
+//     }
+// })
+
+// BMW = Vehical Type = color, name, showroom
+// Honda = Vehical Type = Color, name, showroom
+
+// Parent
+
+class Vehical{
+    constructor(color, name, showroom){
+    //    this.vehicalTyle = vehicalTyle;
+       this.color = color;
+       this.name = name;
+       this.showroom = showroom; 
+    }
 }
 
-let btn = document.getElementById('btn');
-btn.addEventListener('click', ()=>{
-    if(count < fruits.length){
-        countText.innerText += fruits[count];
-        count++;
-    }else{
-        alert("No More Fruits...")
+// Child 1 - Vehical
+class Car extends Vehical{
+    // Method
+      additinalDetails(vtype, city){
+        this.vtype = "For Wheeler";
+        this.city = "Bilaspur"
     }
-})
+}
+
+let c1 = new Car("White", "BMW", "Mahajan 1");
+let c2 = new Car("White", "BMW", "Mahajan 1");
+let c3 = new Car("Red", "Mahindra", "Mahajan 2");
+let c4 = new Car("Gray", "Thar", "Mahajan 3");
+
+c1.additinalDetails()
+c2.additinalDetails()
+c3.additinalDetails()
+c4.additinalDetails()
+
+let allCars = [c1, c2, c3, c4]
+
+// Child 2- Car
+class Bike extends Car{
+    additinalDetails(vtype, city){
+        this.vtype = "Two Wheeler";
+        this.city = "Raipur"
+    }
+}
+
+let b1 = new Bike("Gray", "Hunter", "MahaLakchmi 1")
+let b2 = new Bike("Orange", "City 100", "MahaLakchmi 2")
+let b3 = new Bike("Blue", "Apache", "MahaLakchmi 3")
+let b4 = new Bike("White", "Activa", "MahaLakchmi 4")
+
+b1.additinalDetails()
+b2.additinalDetails()
+b3.additinalDetails()
+b4.additinalDetails()
+
+
+let allBike = [b1, b2, b3, b4]
+
+let allVehical = [...allCars, ...allBike]
+
+for(let i in allVehical){
+    console.log(i)
+}
