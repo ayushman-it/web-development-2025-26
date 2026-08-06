@@ -209,59 +209,192 @@ let allUser = [u1, u2, u3, u4, u5]
 
 // Parent
 
-class Vehical{
-    constructor(color, name, showroom){
-    //    this.vehicalTyle = vehicalTyle;
-       this.color = color;
-       this.name = name;
-       this.showroom = showroom; 
+// class Vehical{
+//     constructor(color, name, showroom){
+//        this.color = color;
+//        this.name = name;
+//        this.showroom = showroom; 
+//     }
+// }
+
+// class Car extends Vehical{
+//       additinalDetails(vtype, city){
+//         this.vtype = "For Wheeler";
+//         this.city = "Bilaspur"
+//     }
+// }
+
+// let c1 = new Car("White", "BMW", "Mahajan 1");
+// let c2 = new Car("White", "BMW", "Mahajan 1");
+// let c3 = new Car("Red", "Mahindra", "Mahajan 2");
+// let c4 = new Car("Gray", "Thar", "Mahajan 3");
+
+// c1.additinalDetails()
+// c2.additinalDetails()
+// c3.additinalDetails()
+// c4.additinalDetails()
+
+// let allCars = [c1, c2, c3, c4]
+
+// class Bike extends Car{
+//     additinalDetails(vtype, city){
+//         this.vtype = "Two Wheeler";
+//         this.city = "Raipur"
+//     }
+// }
+
+// let b1 = new Bike("Gray", "Hunter", "MahaLakchmi 1")
+// let b2 = new Bike("Orange", "City 100", "MahaLakchmi 2")
+// let b3 = new Bike("Blue", "Apache", "MahaLakchmi 3")
+// let b4 = new Bike("White", "Activa", "MahaLakchmi 4")
+
+// b1.additinalDetails()
+// b2.additinalDetails()
+// b3.additinalDetails()
+// b4.additinalDetails()
+
+
+// let allBike = [b1, b2, b3, b4]
+
+// let allVehical = [...allCars, ...allBike]
+
+// for(let i in allVehical){
+//     console.log(i)
+// }
+
+class Claculator{
+    calc(){
+        console.log("I am Calculator")
     }
 }
 
-// Child 1 - Vehical
-class Car extends Vehical{
-    // Method
-      additinalDetails(vtype, city){
-        this.vtype = "For Wheeler";
-        this.city = "Bilaspur"
+class Sum extends Claculator{
+    // Same Method
+    calc(num1, num2){
+        // Addon 
+        console.log(num1 + num2)
     }
 }
 
-let c1 = new Car("White", "BMW", "Mahajan 1");
-let c2 = new Car("White", "BMW", "Mahajan 1");
-let c3 = new Car("Red", "Mahindra", "Mahajan 2");
-let c4 = new Car("Gray", "Thar", "Mahajan 3");
-
-c1.additinalDetails()
-c2.additinalDetails()
-c3.additinalDetails()
-c4.additinalDetails()
-
-let allCars = [c1, c2, c3, c4]
-
-// Child 2- Car
-class Bike extends Car{
-    additinalDetails(vtype, city){
-        this.vtype = "Two Wheeler";
-        this.city = "Raipur"
+class Minus extends Claculator{
+    // Same Method
+    calc(num1, num2){
+        // Behavioud Minus
+        console.log(num1 - num2)
     }
 }
 
-let b1 = new Bike("Gray", "Hunter", "MahaLakchmi 1")
-let b2 = new Bike("Orange", "City 100", "MahaLakchmi 2")
-let b3 = new Bike("Blue", "Apache", "MahaLakchmi 3")
-let b4 = new Bike("White", "Activa", "MahaLakchmi 4")
+let calc1 = new Sum()
+let calc2 = new Minus()
 
-b1.additinalDetails()
-b2.additinalDetails()
-b3.additinalDetails()
-b4.additinalDetails()
+// calc1.calc(45, 45)
+// calc2.calc(45, 45)
 
 
-let allBike = [b1, b2, b3, b4]
 
-let allVehical = [...allCars, ...allBike]
+// class EMP{
+//     constructor(userName, userAge, UserCity){
+//         this.userName = userName;
+//         this.userAge = userAge;
+//         this.UserCity = UserCity;
+//     }
 
-for(let i in allVehical){
-    console.log(i)
+//     desgination(digi){
+//        this.digi = "Software Developer";
+//     }
+//     company(comp){
+//         this.comp = "CuboidSoft Company";
+//     }
+// }
+
+// class Library extends EMP{
+//     desgination(digi){
+//         super.company()
+//         this.digi = "Librarian";
+//     }
+// }
+
+// class Cateeen extends EMP{
+//     desgination(digi){  
+//         super.company()
+//         this.digi = "Cateen Manager";
+//     }
+// }
+
+
+// let d1 = new EMP("Ayushman", 23, "Waraseoni");
+
+// let l1 = new Library("Pratham", 21, "Katani");
+
+// let c1 = new Cateeen("Aadarsh", 23, "Balaghat");
+
+// d1.desgination();
+// l1.desgination();
+// c1.desgination();
+
+
+// let allGroups = [d1, l1, c1];
+// console.log(allGroups[0])
+
+// class Student{
+//     // Private Variable (Property)
+//     #age;
+//     #name;
+
+//     getAge(){
+//         return this.age;
+//     }
+
+//     setAge(age){
+//         this.age = age;
+//     }
+
+//     getName(){
+//         return this.name;
+//     }
+
+//     setName(name){
+//         this.name = name;
+//     }
+// }
+
+// let s1 = new Student();
+// s1.setAge(23);
+// s1.setName("Ayushman");
+
+// console.log(s1.getAge(), s1.getName())
+
+
+class Student{
+    // Private Variables / Props
+    #age;
+    #name;
+
+    constructor(age, name){
+        this.#age = age;
+        this.#name = name;
+    }
+
+    get age(){
+        return this.#age;
+    }
+
+    set age(value){
+        this.#age = value;
+    }
+
+    get name(){
+        return this.#name;
+    }
+
+    set name(value){
+        this.#name = value;
+    }
 }
+
+let s1 = new Student();
+
+s1.age = 24;
+s1.name = "Ayushman";
+
+console.log(s1.age, s1.name)
