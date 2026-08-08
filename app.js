@@ -365,36 +365,124 @@ let calc2 = new Minus()
 // console.log(s1.getAge(), s1.getName())
 
 
-class Student{
-    // Private Variables / Props
-    #age;
-    #name;
+// class Student{
+//     // Private Variables / Props
+//     #age;
+//     #name;
 
-    constructor(age, name){
-        this.#age = age;
-        this.#name = name;
-    }
+//     constructor(age, name){
+//         this.#age = age;
+//         this.#name = name;
+//     }
 
-    get age(){
-        return this.#age;
-    }
+//     get age(){
+//         return this.#age;
+//     }
 
-    set age(value){
-        this.#age = value;
-    }
+//     set age(value){
+//         this.#age = value;
+//     }
 
-    get name(){
-        return this.#name;
-    }
+//     get name(){
+//         return this.#name;
+//     }
 
-    set name(value){
-        this.#name = value;
-    }
-}
+//     set name(value){
+//         this.#name = value;
+//     }
+// }
 
-let s1 = new Student();
+// let s1 = new Student();
 
-s1.age = 24;
-s1.name = "Ayushman";
+// s1.age = 24;
+// s1.name = "Ayushman";
 
-console.log(s1.age, s1.name)
+// console.log(s1.age, s1.name)
+
+// let x = 80;
+// console.log(typeof(x));
+
+// console.log()
+// typeof()
+
+
+// class Payment{
+//     pay(){
+//         console.log("Payment Need to Complete")
+//     }
+// }
+
+// class UPI extends Payment{
+//     pay(amnt){
+//         this.amnt = amnt;
+//         console.log(amnt + 10);
+//     }
+// }
+
+// class CredidCart extends Payment{
+//     pay(amnt){
+//         this.amnt = amnt;
+//         if(amnt > 2000){
+//             console.log("You have Recieved 500 Rupee Cashback...")
+//         }else{
+//             console.log(amnt, "Payment Recieved Using Credit Card")
+//         }
+//     }
+// }
+
+// let p1 = new UPI();
+// // p1.pay(90)
+
+// let p2 = new CredidCart();
+
+// p2.pay(30000)
+
+// console.log(p2)
+
+// Method Overloading
+
+// class Claculator{
+//     add(x, y){
+//         console.log(x + y);
+//     }
+
+//     add(x, y , z){
+//         console.log(x + y + z);
+//     }
+// }
+
+// let a1 = new Claculator();
+// a1.add()
+
+// class Dog{
+//     sounds(){
+//         console.log("Animals Makes a Sound")
+//     }
+// }
+
+// class Cat extends Dog{
+//     sounds(){
+//         console.log("Cat is meow")
+//     }
+// }
+
+// let a1 = new Cat();
+// a1.sounds()
+
+// class Calculator{
+//     static add(x, y){
+//         console.log(x + y);
+//     }
+// }
+
+// Calculator.add(20, 20)
+
+let user = {name: "Ansh", age: 23}
+let number = [10, 20, 23, 35];
+
+const [a, b] = number;
+
+const {name, age} = user;
+
+console.log(a);
+console.log(b);
