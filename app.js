@@ -477,12 +477,69 @@ let calc2 = new Minus()
 
 // Calculator.add(20, 20)
 
-let user = {name: "Ansh", age: 23}
-let number = [10, 20, 23, 35];
+ 
+// let number = [10, 20, 23, 35];
 
-const [a, b] = number;
+// const [a, b] = number;
 
-const {name, age} = user;
+// const {name, age} = user;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+
+const fruits = ["Apple", "Banana", "Grapes"];
+const veg = ["Onion", "Brinjal", "Ledy Finger"];
+const drinks = ["Coke", "Sprite", "String"];
+
+const allData = [fruits, veg, drinks];
+// console.log(allData)
+
+const copyData = [...fruits, ...veg];
+// console.log(copyData)
+
+
+// let newCopy = fruits.concat(drinks, veg)
+
+let tcmstudent = {
+    name: "Pratham",
+    age:21
+}
+
+let updateStudent = {
+    ...tcmstudent,
+    course: "Web Development"
+}
+
+// console.log(updateStudent)
+
+// function add(numbers){
+//     console.log(numbers)
+// }
+
+// add(19, 20, 39, 49)
+
+// try {
+//     console.log(tcm)
+// } catch (error) {
+//     console.error("Bhai Error Hai Please check")
+// }
+
+//  console.log(tcm)
+
+function login(userName, userPassword){
+    if(!userName || !userPassword){
+        throw new Error("Username or Password is required...");
+    }
+    console.log("User Logged In")
+}
+
+try {
+    login("", "")
+} catch (error) {
+    console.error("Kuch to gadbad hai...")
+}
+finally{
+    console.log("Bhai mai to chalunga hi bhale hi error ho ya kuch...")
+}
+
+// callback, promise, asynchronus, callstack, array, string, object method, eventboubling,  api fetuching with json,
