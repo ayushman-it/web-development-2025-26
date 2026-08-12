@@ -526,20 +526,96 @@ let updateStudent = {
 
 //  console.log(tcm)
 
-function login(userName, userPassword){
-    if(!userName || !userPassword){
-        throw new Error("Username or Password is required...");
-    }
-    console.log("User Logged In")
-}
+// function login(userName, userPassword){
+//     if(!userName || !userPassword){
+//         throw new Error("Username or Password is required...");
+//     }
+//     console.log("User Logged In")
+// }
 
-try {
-    login("", "")
-} catch (error) {
-    console.error("Kuch to gadbad hai...")
-}
-finally{
-    console.log("Bhai mai to chalunga hi bhale hi error ho ya kuch...")
-}
+// try {
+//     login("", "")
+// } catch (error) {
+//     console.error("Kuch to gadbad hai...")
+// }
+// finally{
+//     console.log("Bhai mai to chalunga hi bhale hi error ho ya kuch...")
+// }
 
-// callback, promise, asynchronus, callstack, array, string, object method, eventboubling,  api fetuching with json,
+// callstack, ,promise, array, string, object method, eventboubling,  api fetuching with json,
+
+// function greeting(callback1, callback2){
+//     console.log("Hello i am Ayushman");
+
+//     callback1();
+//     callback2();
+// }
+
+// function welcome(){
+//     console.log("Welcome to TCM");
+// }
+
+// function bye(){
+//     console.log("Bye Bye TCM");
+// }
+
+// greeting(welcome, bye);
+
+// function calcu(a, b, callback) {
+//     let data = a + b;
+
+//     callback(data)
+// }
+
+// calcu(10, 20, function(x){
+//     console.log("Data Output :", x );
+// })
+
+// function calcu(a, b, callback) {
+//     let data = a + b;
+
+//     callback(data)
+// }
+
+// calcu(10, 20, function(recievData){
+//     console.log("Result : ", recievData)
+// })
+
+// console.log("Product Creating...");
+
+// setTimeout(() => {
+//     console.log("Product Created!")
+// }, 2000);
+
+// console.log("Loading Page");
+
+// function getUser(callback){
+//     let user = {
+//         name: "Rahul",
+//         age: 21
+//     };
+
+//     callback(user);
+// }
+
+// getUser(function(recievUser){
+//     console.log("Hii I am ", recievUser.name);
+//     console.log("and My age is ", recievUser.age);
+// })
+
+
+// console.log("Product Creating...");
+
+// setTimeout(() => {
+//     console.log("Product Created!")
+// }, 2000);
+
+// console.log("Loading...");
+
+console.log("Product Creating...");
+
+setInterval(() => {
+    console.log("Product Created!")
+}, 2000);
+
+console.log("Loading Page");
