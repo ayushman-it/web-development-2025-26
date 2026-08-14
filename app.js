@@ -542,7 +542,7 @@ let updateStudent = {
 //     console.log("Bhai mai to chalunga hi bhale hi error ho ya kuch...")
 // }
 
-// callstack, ,promise, array, string, object method, eventboubling,  api fetuching with json,
+// array, string, object method, eventboubling,  api fetuching with json,
 
 // function greeting(callback1, callback2){
 //     console.log("Hello i am Ayushman");
@@ -612,10 +612,88 @@ let updateStudent = {
 
 // console.log("Loading...");
 
-console.log("Product Creating...");
+// console.log("Product Creating...");
 
-setInterval(() => {
-    console.log("Product Created!")
-}, 2000);
+// setInterval(() => {
+//     console.log("Product Created!")
+// }, 2000);
 
-console.log("Loading Page");
+// console.log("Loading Page");
+
+// class user{
+//     constructor(prop1, prop2){
+//         this.prop1 = prop1;
+//         this.prop2 = prop2;
+//     }
+// }
+
+// let u1 = new User("Aysuhman", 23)
+
+// let promise = new Promise((resolve, reject) =>{
+//     let success = false;
+
+//     if(success){
+//         resolve("API is fetched...")
+//     }else{
+//         reject("No internet connectivity")
+//     }
+// })
+// promise
+//     .then((result)=>{
+//         console.log(result)
+//     })
+//     .catch((error)=>{
+//         console.log(error)
+//     })
+   
+
+
+// let promise = new Promise((resolve, reject) => {
+//     let sucess = true;
+
+//     if(sucess){
+//         resolve("API is fetched!")
+//     }else{
+//         reject("Something went wrong...")
+//     }
+// });
+
+// console.log(typeof(promise));
+
+// let promise = new Promise((resolve, reject) =>{
+
+//     setTimeout(() => {
+//         const success = true;
+
+//         if(success){
+//             resolve("API is fetched!")
+//         }else{
+//             reject("Something went wrong...")
+//         }
+        
+//     }, 2000);
+// });
+
+// console.log("Processing...");
+
+// promise
+//     .then((data)=>{
+//         console.log(data);
+//     })
+//     .catch((error)=>{
+//         console.log(error);
+//     })
+// console.log("Rest works.")
+
+// Callstack - its means to track of function excutions, why, when they execute.
+
+// function first(){
+//     second();
+//     console.log("First function");
+// }
+
+// function second(){
+//     console.log("second function");
+// }
+
+// first();
