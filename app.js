@@ -697,3 +697,76 @@ let updateStudent = {
 // }
 
 // first();
+
+
+// Array 
+
+//(Length)------1---------2---------3-----(3)
+//(Itrates)-----0---------1---------2------
+let fruit = ["Apple", "Banana", "Grapes", "Orange"];
+
+// Push Method 
+// fruit.push("Mango");
+
+// POP
+// fruit.pop()
+// console.log(fruit)
+
+// Unshift
+// fruit.unshift("Papaya");
+// console.log(fruit)
+
+// Shift
+// fruit.shift();
+// console.log(fruit)
+
+
+// Map = It is used for filters ad it will give us a new array.+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let result = numbers.map(num => 2 * num);
+// console.log("old array : ", numbers);
+// console.log("New array through map : ", result);
+
+
+// Filter
+// let product = [10, 15, 20, 25, 30];
+// let result1 = product.filter(price => price < 20);
+// console.log(result1, " Filter");
+
+
+// find
+// let ageGroups = [13, 20, 12, 13, 34, 10, 9,  23, 33];
+
+// let result2 = ageGroups.find(age => age < 11);
+// console.log(result2, " Find");
+
+// ------------(------------------------------------)
+// let ageGroups = [13, 20, 12, 13, 34, 10, 9,  23, 33];
+
+// ------------(--|---|---|---|---|---|-|-----|---|--)
+// let ageGroups = [13, 20, 12, 13, 34, 10, 9,  23, 33];
+// ageGroups.forEach(num => console.log(num))
+
+// let ageGroups = [13, 20, 12, 13, 34, 10, 9,  23, 33];
+// let data = document.getElementById('data');
+
+// ageGroups.forEach((age, index) =>{
+//     let btn = document.createElement("button");
+//     btn.innerText = `Age - ${age}`;
+
+//     btn.addEventListener('click', ()=>{
+//         alert(`${index} "My Age" ${age}`);
+//     })
+
+//     data.appendChild(btn);
+// })
+
+// Reduce
+// let numbers = [10, 20, 30 , 40, 50];
+
+// let result = numbers.reduce((sum, num) =>{
+//     return sum + num;
+// }, 100);
+
+// console.log(result);
