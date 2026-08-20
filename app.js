@@ -770,3 +770,119 @@ let fruit = ["Apple", "Banana", "Grapes", "Orange"];
 // }, 100);
 
 // console.log(result);
+
+// include
+// ================
+// let vgie = ["Apple", "Banana", "Mango"];
+
+
+// console.log(vgie.includes("Grapes"))
+
+// IndexOF
+// let vgie = ["Apple", "Banana", "Mango", "Orange"];
+
+
+// console.log(vgie.indexOf("Orange"));
+
+// slice
+
+// let num = [10, 20, 30, 40, 50, 60, 70, 80];
+// let result = num.slice(1, 5);
+// console.log(result)
+
+// Splice
+// let vgie = ["Apple", "Banana", "Mango", "Orange"];
+
+// vgie.splice(1,2, "Grapes");
+
+// console.log(vgie);
+
+
+// String Method
+
+// let name = "ayushman";
+// let name = "AYUSHMAN";
+
+// console.log(name.toUpperCase())
+// console.log(name.toLowerCase())
+
+
+// Includes
+
+// let name = "JavaScript";
+
+// // console.log(name.includes("Script"))
+
+
+// Split
+
+// let name = "Rahul Aman Pratham Ansh";
+
+// let result = name.split(" ");
+
+// console.log(result);
+
+// Trim
+
+// let name = "             Ansh  ";
+
+// console.log(name.trim())
+// Form Filling
+// Search Filter
+// Form Validation 
+// =----------------------------
+
+// Object Method
+
+// Object key, value,  entries, assign , freeze, hasOwn
+
+// Object Key 
+// let emp = {
+//     name: "Ayushman",
+//     age: 23,
+//     designation: "UX Designer"
+// }
+// let result = Object.keys(emp);
+// let result2 = Object.values(emp);
+// let result3 = Object.entries(emp);
+
+// console.log(result)
+// console.log(result2)
+// console.log(result3)
+
+
+// let std = {
+//     name : "Rahul"
+// }
+
+// let data = {
+//     age :23,
+//     course: "Javascript"
+// };
+
+// let result = Object.assign({}, std, data);
+
+// console.log(result)
+
+// let std = {
+//     name :"Ayushman",
+//     course: "Javascript"
+// };
+// Object.freeze(std);
+
+// std.name = "Pratham";
+
+// console.log(std.name)
+
+// let std = {
+//     name :"Ayushman",
+//     course: "Javascript"
+// };
+
+// console.log(Object.hasOwn(std, "name"));
+// console.log(Object.hasOwn(std, "course"));
+// console.log(Object.hasOwn(std, "age"));
+
+// ==================================================
+
+//  eventboubling,  api fetuching with json,
