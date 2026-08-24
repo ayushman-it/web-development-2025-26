@@ -885,4 +885,54 @@ let fruit = ["Apple", "Banana", "Grapes", "Orange"];
 
 // ==================================================
 
-//  eventboubling,  api fetuching with json,
+//  eventboubling,  api fetuching with json  (Local Storage, Session Storage),
+
+
+// Event Bubbling
+// let body = document.getElementById('body');
+// let parent = document.getElementById('parent');
+// let btn = document.getElementById('btn');
+// let btn = document.querySelectorAll('.btn');
+
+// btn.forEach(function(bt, index){
+//     bt.addEventListener("click", function(){
+//         console.log(event.currentTarget);
+//     })
+// })
+
+// body.addEventListener('click', function(){
+//     body.style.backgroundColor = "gray";
+// })
+
+// parent.addEventListener('click', function(){
+//     parent.style.backgroundColor = "yellow";
+// })
+
+
+// btn.addEventListener('click', function(event){
+//     console.log(event.target);
+// })
+
+
+// let name = input.value;
+
+// API - 
+
+// fetch("https://jsonplaceholder.typicode.com/user")
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         console.log("APi me Gadbad Hai")
+//     })
+    
+
+fetch("http://localhost:3000/users")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => {
+        console.log(error)
+    })
